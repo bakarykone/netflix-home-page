@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
     
   </head>
-    <body class="bg-fixed bg-cover bg-no-repeat w-full " style="background-image:url(https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/02/black-panther-best-picture.jpg)">
+    <body class="bg-fixed bg-cover bg-no-repeat w-full bg-black " style="background-image:url(https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/02/black-panther-best-picture.jpg)">
       
       <header class="text-white fixed top-0 bg-gradient-to-b from-black w-full z-50">
         <div class="px-12 flex flex-wrap p-5 flex-col xl:flex-row items-center">
@@ -269,7 +269,7 @@
 
        <!--movie container-->
        <div class="movie-container">
-          <img class="movie-hover rounded" src="assets/images/alteredcarbon.png">
+          <img class="movie-hover rounded" src="assets/images/Capture">
           <video class="movie rounded" src="assets/vid/altered-carbon-saison-2-bande-annonce-vf-2020-anthony-mackie.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause();"></video>
        </div> 
        
@@ -316,19 +316,21 @@
 </div>
       
       <div class="pl-4 md:pl-8 lg:pl-12 xl:pl-16 py-4">
-        <p class="py-2 font-semibold text-xl">Ma Liste</p>
-        <div class="flex items-center relative">
+        
+          <p class="py-2 font-semibold text-xl">Ma Liste</p>
+          <div class="flex items-center relative">
 
             
-            <!--Container Carousel-->
-            <div class="container-carousel scroll1 overflow-hidden z-50"></div>
-            <!-- arrow left -->
-            <div class="absolute z-50 left-0 top-0 leftArrow1">
-                <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
-            </div>
+              <!--Container Carousel-->
+              <div class="container-carousel scroll1 overflow-hidden z-50"></div>
+            
+                <!-- arrow left -->
+                <div class="absolute z-50 left-0 leftArrow1" onClick="leftScroll('.scroll1', '.leftArrow1')">
+                    <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                </div>
 
-            <div class="container-carousel">
-                <div class="carousel grid gap-2 hidden lg:grid-col-3">
+                <div class="container-carousel">
+                  <div class="carousel grid gap-2 hidden lg:grid-col-3">
                         <div class="pics">
                             <a href="#"><img src="assets/images/Capture_Lucifer.PNG" alt="" class="rounded"></a>
                         </div>
@@ -366,7 +368,7 @@
             </div>
 
             <!-- arrow right -->
-            <div class="absolute z-50 right-0 top-0 rightArrow1">
+            <div class="absolute z-50 right-0 rightArrow1"onClick="rightScroll('.scroll1', '.rightArrow1')">
                 <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
             </div>
 
@@ -385,7 +387,7 @@
       <div class="flex items-center relative">
 
           <!-- arrow left -->
-          <div class="absolute left-0 left-arrow">
+          <div class="absolute left-0 leftArrow2" onClick="leftScroll('.scroll2', '.leftArrow2')">
               <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
           </div>
 
@@ -438,7 +440,7 @@
           </div>
 
           <!-- arrow right -->
-          <div class="absolute right-0 right-arrow">
+          <div class="absolute right-0 rightArrow2" onClick="leftScroll('.scroll2', '.leftArrow2')">
               <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
           </div>
 
@@ -1293,7 +1295,7 @@
   </footer>
 </section>
 
-<script src="assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
  
     </body>
     </html>
